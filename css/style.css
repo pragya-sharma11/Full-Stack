@@ -10,6 +10,9 @@ h1{
     margin: 1%;
 }
 a{
+    color: purple;
+}
+.navLink{
    
     margin-left: 15%;
     color: black;
