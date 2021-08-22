@@ -5,8 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        a{
+            color: black;
+            font-weight: 800;
+        }
+        h1,h2{
+            color: brown;
+        }
+        h3{
+        color: rgb(173, 73, 27);
+        }
+        body{
+            background-color: rgb(241, 234, 225);
+        }
+    </style>
 </head>
 <body>
-    <img style="margin-left: 10%;" height="80px" width="1000px" src="../Photos/navbar.png" alt="">
+    <img style="margin-left: 10%;" height="80px" width="1000px" src="../Photos/navbar.png" alt="" usemap="#nav">
+    <map name="nav">
+        <area shape="rect" coords="18,15,112,66" href="../index.html" alt="">
+        <area shape="rect" coords="137,21,280,57" href="Assignment1.html" alt="">
+        <area shape="rect" coords="299,18,450,60" href="Assignment2.html" alt="">
+        <area shape="rect" coords="465,16,617,61" href="Assignment3.html" alt="">
+        <area shape="rect" coords="635,13,794,63" href="Assignment4.html" alt="">
+        <area shape="rect" coords="806,12,974,62" href="Assignment5.html" alt="">
+    </map>
+    <h3>Practical-5 : Show the use of ImageMap</h3>
+    <h1>FullStack Course</h1>
+    <img height="450px" width="1200px" src="../Photos/all.png" alt="" usemap="#mymap">
+    <map name="mymap">
+        <area shape="rect" coords="94,112,382,327" href="description/html.html" alt="">
+        <area shape="rect" coords="444,115,779,339" href="description/CSS.html" alt="">
+        <area shape="rect" coords="806,112,1137,334" href="description/js.html" alt="">
+    </map>     
+
 </body>
 </html>
