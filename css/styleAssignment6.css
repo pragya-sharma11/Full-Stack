@@ -1,0 +1,11 @@
+body{
+    margin: 0;
+    background-color: rgb(207, 205, 205);
+}
+.heading{
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    margin: 2%;
+}
