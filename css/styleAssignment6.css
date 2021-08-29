@@ -10,11 +10,9 @@ body{
     margin: 2%;
 }
 .container{
-display: inline-flex;
-align-content: space-between;
-width: 100%;
-flex-wrap: wrap;
-align-content: center;
+    display: inline-flex;
+    width: 100%;
+    flex-wrap: wrap;
 }
 .item{
     width: 21%;
@@ -24,7 +22,7 @@ align-content: center;
     background-color: white;
     align-items: center;
     text-align: justify;
-    border-radius: 5px;
+    border-radius: 7px;
 }
 
 p{
@@ -55,4 +53,6 @@ a :hover{
 }
 a :active{
     transform: translate3d(-5px, -5px, 5px);
+    background-color: rgb(9, 70, 255);
+    box-shadow: royalblue 2px 2px 2px 2px;
 }
