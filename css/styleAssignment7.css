@@ -18,15 +18,49 @@ div{
     background-color: rgb(150, 230, 250);
     color: white;
     text-align: center;
-    height: 200px;
-    line-height: 180px;
+    height: 300px;
+    line-height: 280px;
 }
 .section1{
+    width: 100%;
+    text-align: center;
+    
+}
+.circlecontainer{
+    display: flex;
+    flex: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
 
 }
-
-.section2{
+.circle{
+    background-color: rgb(226, 174, 4);
+    height: 150px;
+    width: 150px;
+    border-radius: 150px;
     
+}
+.section2{
+    text-align: center;
+}
+.Mainarticle{
+    display: inline-flex;
+}
+.main{
+    background-color: gray;
+    height: 200px;
+    width: 610px;
+    line-height: 199px;
+    font-size: 30px;
+    color: white;
+}
+.article{
+    background-color: rgb(221, 92, 5);
+    height: 63px;
+    color: white;
+    width: 610px;
+    line-height: 59px;
 }
 .section3{
     
