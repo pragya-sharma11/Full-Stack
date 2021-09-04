@@ -5,6 +5,7 @@ body{
 div{
     margin: 0.8%;
     font-weight: 900;
+    font-size: 20px;
 }
 .header{
     background-color: gray;
@@ -22,14 +23,13 @@ div{
     line-height: 280px;
 }
 .section1{
-    width: 100%;
     text-align: center;
-    
+    width: 98%;
 }
 .circlecontainer{
     display: flex;
     flex: wrap;
-    width: 100%;
+    width: 98%;
     align-items: center;
     justify-content: space-evenly;
 
@@ -43,28 +43,56 @@ div{
 }
 .section2{
     text-align: center;
+    margin: 0.5%;
 }
 .Mainarticle{
     display: inline-flex;
+    margin: 0%;
+    justify-content: space-evenly;
+    width: 99%;
 }
 .main{
     background-color: gray;
     height: 200px;
-    width: 610px;
+    width: 625px;
     line-height: 199px;
     font-size: 30px;
     color: white;
+    margin-left: 0%;
 }
 .article{
     background-color: rgb(221, 92, 5);
     height: 63px;
     color: white;
-    width: 610px;
+    width: 625px;
     line-height: 59px;
+    margin-right: 0%;
 }
 .section3{
-    
+    text-align: center;
+    margin: 0.5%;
+}
+.sqcontainer{
+    display: flex;
+    justify-content: space-evenly;
+    width: 98%;
+    margin: 0%;
+}
+.sq{
+    background-color: orangered;
+    height: 150px;
+    width: 150px;
 }
 .section4{
-    
+    text-align: center;
+}
+.footer{
+    text-align: center;
+    color: white;
+    background-color: pink;
+    height: 100px;
+    padding: 1%;
+    font-size: 30px;
+    line-height: 99px;
+    margin: 0%;
 }
