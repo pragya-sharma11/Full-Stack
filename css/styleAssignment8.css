@@ -4,28 +4,56 @@ body{
 }
 div{
     margin: 0.8%;
-    font-weight: 900;
-    font-size: 20px;
+    font-weight: bold;
+    font-size: 30px;
 }
 .header{
     background-color: gray;
     color: white;
     text-align: center;
-    font-size: 20px;
-    padding: 2%;
+    font-size: 25px;
+    padding: 1%;
+    text-decoration: none;
+    margin-bottom: 2%;
+    position: sticky;
+    top: 0px;
+    border-radius: 4px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    width: 98%;
+}
+.navbar div{
+    padding: 1%;
+    width: 20%;
+    padding: 1%;
+    
+}
+.navbar div > a{
+    color: white;
+    font-size: 25px;
+    width: fit-content;
+}
+.navbar div>a:hover{
+    color: black;
+    background-color: white;
+
 }
 .banner{
-    font-size: 20px;
+    font-size: 50px;
+    font-weight: bold;
     background-color: rgb(150, 230, 250);
     color: white;
-    text-align: center;
+    padding: 2%;
     height: 550px;
-    line-height: 280px;
     background-image: url("../Photos/practical8.jpg");
+    margin-bottom: 3%;
 }
 .section1{
     text-align: center;
     width: 98%;
+    margin-bottom: 4%;
 }
 .circlecontainer{
     display: flex;
@@ -33,7 +61,7 @@ div{
     width: 98%;
     align-items: center;
     justify-content: space-evenly;
-
+    
 }
 .circle{
     background-color: rgb(226, 174, 4);
@@ -45,20 +73,31 @@ div{
 .section2{
     text-align: center;
     margin: 0.5%;
+    margin-bottom: 4%
 }
 .Mainarticle{
     display: inline-flex;
     margin: 0%;
     justify-content: space-evenly;
     width: 99%;
+    margin-top: 1%;
 }
 .main{
     background-color: gray;
     height: 360px;
     width: 625px;
-    font-size: 15px;
+    font-size: 22px;
+    text-align: justify;
     color: white;
     margin-left: 0%;
+}
+.main p{
+    padding: 0.5%;
+}
+.main  .p{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
 }
 .article{
     background-color: rgb(221, 92, 5);
@@ -71,6 +110,7 @@ div{
 .section3{
     text-align: center;
     margin: 0.5%;
+    margin-bottom: 4%;
 }
 
 .container{
@@ -124,14 +164,21 @@ a :active{
 }
 .section4{
     text-align: center;
+    border: pink solid 2px;
+    box-shadow: rgb(148, 72, 72) 2px 2px 4px 2px;
 }
 .footer{
     text-align: center;
-    color: white;
+    color: black;
     background-color: pink;
-    height: 100px;
     padding: 1%;
     font-size: 30px;
-    line-height: 99px;
     margin: 0%;
+    justify-content: center;
+    border-radius: 5px;
+    
+}
+.footer a{
+    text-decoration: underline;
+    color: rgb(241, 46, 78);
 }
