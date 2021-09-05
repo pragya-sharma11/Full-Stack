@@ -85,7 +85,7 @@ div{
 .main{
     background-color: gray;
     height: 360px;
-    width: 625px;
+    width: 645px;
     font-size: 22px;
     text-align: justify;
     color: white;
@@ -103,7 +103,7 @@ div{
     background-color: rgb(221, 92, 5);
     height: 115px;
     color: white;
-    width: 625px;
+    width: 645px;
     line-height: 59px;
     margin-right: 0%;
 }
