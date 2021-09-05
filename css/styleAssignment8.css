@@ -37,10 +37,10 @@ div{
 }
 .circle{
     background-color: rgb(226, 174, 4);
-    height: 215px;
-    width: 215px;
-    border-radius: 215px;
-    
+    height: 220px;
+    width: 220px;
+    border-radius: 220px;
+    border:rgb(85, 77, 77) solid 8px ;
 }
 .section2{
     text-align: center;
@@ -72,16 +72,55 @@ div{
     text-align: center;
     margin: 0.5%;
 }
-.sqcontainer{
-    display: flex;
-    justify-content: space-evenly;
+
+.container{
+    display:inline-flex;
     width: 98%;
-    margin: 0%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
-.sq{
-    background-color: orangered;
-    height: 150px;
-    width: 150px;
+.item{
+    width: 21%;
+    height: fit-content;
+    margin: 0.5%;
+    padding: 1%;
+    border: rgb(248, 192, 192) solid 5px;
+    align-items: center;
+    text-align: justify;
+    border-radius: 7px;
+    box-shadow: rgb(170, 130, 130) 3px 3px 3px 3px;
+}
+
+p{
+    font-size: large;
+    font-weight: 400;
+    
+}
+img{
+    align-self: center;
+    width: 99%;
+    border-radius: 5px;
+}
+a{
+    text-decoration: none;
+}
+a > div{
+    border-radius: 5px;
+    padding: 1%;
+    background-color: rgb(167, 5, 5);
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+a :hover{
+    transform: translate(-5px,-10px);
+    box-shadow: rgb(148, 72, 72) 4px 4px 4px 4px;
+}
+a :active{
+    transform: translate3d(-5px, -5px, 5px);
+    background-color: rgb(9, 70, 255);
+    box-shadow: royalblue 2px 2px 2px 2px;
 }
 .section4{
     text-align: center;
