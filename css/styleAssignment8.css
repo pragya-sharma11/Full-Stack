@@ -54,9 +54,8 @@ div{
 }
 .main{
     background-color: gray;
-    height: fit-content;
+    height: 360px;
     width: 625px;
-    
     font-size: 15px;
     color: white;
     margin-left: 0%;
