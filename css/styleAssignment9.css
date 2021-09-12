@@ -1,13 +1,32 @@
+* {
+
+    box-sizing: border-box;
+  
+    margin: 0;
+  
+    padding: 0;
+  
+    text-align: center;
+  
+    font-family: sans-serif;
+  
+  }
+  html {
+    --top-spacing: 100px;
+    scroll-padding-top: var(--top-spacing);
+  }
 body{
     padding: 0%;
     margin: 0%;
 }
 div{
-    margin: 0.8%;
     font-weight: bold;
     font-size: 30px;
 }
 .header{
+    margin-top: 0%;
+    height: 80px;
+    width: 100%;
     background-color: gray;
     color: white;
     text-align: center;
@@ -19,45 +38,82 @@ div{
     top: 0px;
     border-radius: 4px;
 }
-.navbar{
+.header nav{
+    padding: 0%;
+    margin:0%;
+    text-decoration: none;
+    list-style: none;
     display: flex;
     justify-content: space-around;
-    width: 98%;
+    float: right;
+    line-height: 70px;
 }
-.navbar div{
-    padding: 1%;
-    width: 20%;
-    padding: 1%;
-    
+nav ul li{
+    display: inline-block;
+    margin: 0%;
 }
-.navbar div > a{
+nav ul li a{
+    padding: 7px 17px;
+    border-radius: 3px;
     color: white;
     font-size: 25px;
-    width: fit-content;
+    width: max-content;
 }
-.navbar div>a:hover{
+nav ul li a:hover{
     color: black;
     background-color: white;
 
 }
+label.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+}
+.show-btn:hover,.hide-btn:hover {
+  color: skyblue;
+}
+.show-btn,.hide-btn {
+  font-size: 30px;
+  color: white;
+  line-height: 70px;
+  display: none;
+  transition: 0.4s;
+}
+
+.show-btn {
+  float: right;
+}
+
+#check{
+    position: absolute;
+    visibility: hidden;
+}
 .banner{
+    padding: 2%;
+    height: 100vh;
+    background-image: url("../Photos/practical8.jpg");
+    margin-bottom: 3%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:scroll;
+}
+.banner div{
     font-size: 50px;
     font-weight: bold;
     color: white;
-    padding: 2%;
-    height: 550px;
-    background-image: url("../Photos/practical8.jpg");
-    margin-bottom: 3%;
+    text-align: left;
 }
 .section1{
     text-align: center;
-    width: 98%;
     margin-bottom: 4%;
 }
 .circlecontainer{
     display: flex;
-    flex: wrap;
-    width: 98%;
     align-items: center;
     justify-content: space-evenly;
     
@@ -82,27 +138,30 @@ div{
 }
 .main{
     background-color: gray;
-    height: 360px;
-    width: 645px;
+    height: 80vh;
+    color: white;
+    width: 50%;
     font-size: 22px;
     text-align: justify;
     color: white;
-    margin-left: 0%;
-}
+    margin: 0 3px 5px 3px;
+  }
 .main p{
-    padding: 0.5%;
+    padding: 1%;
+    font-size: 20px;
+    text-align: justify;
 }
-.main  .p{
-    text-align: center;
-    font-size: 25px;
-    font-weight: bold;
+
+.Articles{
+    width: 50%;
+    height: 70vh;
 }
 .article{
-    height: 115px;
     color: white;
-    width: 645px;
     line-height: 59px;
     margin-right: 0%;
+    height: 26.5vh;
+    margin-bottom: 2px;
 }
 .section3{
     text-align: center;
@@ -178,4 +237,98 @@ a :active{
 .footer a{
     text-decoration: underline;
     color: rgb(241, 46, 78);
+}
+@media (max-width : 655px){
+    .circlecontainer{
+        flex-direction: column;
+    }
+    .circle{
+        height: 300px;
+        width: 300px;
+        margin:2%
+    }
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .container .item{
+        width: 350px;
+        height: auto;
+        margin:1%;
+        margin-bottom: 4%;
+    }
+    .main{
+        height: 120vh;
+        font-size: 15px;
+    }
+    .article{
+        height: 39.8vh;
+    }
+}
+@media (max-width: 800px ){
+    html {
+        --top-spacing: 320px;
+        scroll-padding-top: var(--top-spacing);
+      }
+    .show-btn, .hide-btn{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: fit-content;
+        top:0;
+        right: -120%;
+        text-align: center;
+        background-color: gray;
+        transition: 0.1s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+        margin-left: 100px
+    }
+    #check:checked ~ ul {
+        right: -0%;
+    
+    }
+    #chk:checked ~ .hide-btn{
+        display: block;
+      }
+
+    nav ul li{
+        display: block;
+        margin: 15px 0px;
+        line-height: 20px;
+    }
+    nav ul li a{
+        font-size: 20px;
+        display: block;
+    }    
+    .hide-btn {
+        position: absolute;    
+        right: 20px;
+        top: 10px;
+    }
+    .circlecontainer{
+        flex-wrap: wrap;
+    }
+    .circle{
+        height: 250px;
+        width: 250px;
+        margin:2%
+    }
+    .container .item{
+        width: 250px;
+        height: auto;
+        margin:1%;
+        margin-bottom: 4%;
+    }
+    .main{
+        height: 120vh;
+        font-size: 15px;
+    }
+    .article{
+        height: 39.8vh;
+    }
 }
