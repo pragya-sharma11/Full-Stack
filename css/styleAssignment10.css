@@ -1,0 +1,130 @@
+*{
+    margin: 0%;
+    color:blue;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0%;
+}
+.header{
+    background-color: #393535;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0%;
+}
+.header img{
+    height: 70px;
+    width: 70px;
+    margin-right: 20px;
+}
+.header h1{
+    line-height: 80px;
+    color: white;
+}
+
+.content{
+    margin:2%;
+    transition: .4s;
+
+}
+.content img{
+    max-width: 320px;
+    max-height: 320px;
+    display: block;
+    margin: auto;
+}
+.content .section{
+    text-align: justify;
+    font-size: 19px;
+}
+.navbar{
+    position: fixed;
+    top: 0px;
+    left: 0;
+    height: 100%;
+    width: 20%;
+    
+}
+.navbar ul{
+    list-style: none;
+    transition: 0.1s;
+    height: 100%;
+    width: 20%;
+    background-color: #393535 ;
+    position: fixed;
+    left: -100%;
+    top:0;
+}
+.navbar ul li:nth-child(1){
+    margin-top: 100px;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+.navbar ul li{
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+.navbar nav ul li a{
+    color: white;
+    padding: 15px 25px;
+    font-size: 20px;
+    display: block;
+    text-decoration:none;
+}
+.navbar nav ul li a span{
+    display: inline-block;
+    margin-left: 20px;
+}
+.navbar nav ul li a i, span{
+    color: white;
+}
+.navbar nav ul div{
+    bottom: 0%;
+    position: fixed;
+    margin-left: 12px;
+}
+.navbar nav ul div  i{
+    font-size: 30px;
+    color: white;
+    margin: 15px;
+}
+.show-btn,.hide-btn{
+    display: block ;
+    position: fixed;
+    top:20px;
+    margin-left: 20px;
+}
+.hide-btn{
+    position: absolute;
+    left: 5px;
+    top: 15px;
+    display: none;
+}
+#check:checked ~ ul{
+    left: 0;
+}
+#check:checked ~ .hide-btn{
+    display: block;
+}
+#check:checked ~ .content{
+    float: right;
+    display: block;
+    width: 80%;
+}
+label.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: left;
+    margin-top: 40px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+}
+#check{
+    position: absolute;
+    visibility: hidden;
+}
