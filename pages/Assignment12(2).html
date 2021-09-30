@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(113, 42, 146);
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        p{
+            font-size: 25px;
+            font-weight: 600;
+            color: white;
+        }
+        .loader{
+            border: rgb(247, 122, 247) 7px solid;
+            border-top: 7px solid white;
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            animation: load 0.8s linear infinite ;
+            
+        }
+        /* @keyframes load{
+            0%{
+                border-top: white solid 7px;
+            }
+            12.5%{
+                border-top-right-radius: white solid 7px;
+            }
+            25%{
+                border-right: white solid 7px;
+            }
+            37.5%{
+                border-bottom-right-radius: white solid 7px;
+            }
+            50%{
+                border-bottom: white solid 7px;
+            }
+            68.5%{
+                border-bottom-left-radius: white solid 7px;
+            }
+            75%{
+                border-left: white solid 7px;
+            }
+            100%{
+                border-top-left-radius: white solid 7px ;
+            }
+        } */
+        @keyframes load{
+            0%{
+                
+                transform: rotate(0deg);
+            }
+            25%{
+                transform: rotate(72deg);
+            }
+            50%{
+                transform: rotate(144deg);
+            }
+            75%{
+                transform: rotate(216deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="loader"></div>
+        <p>Loading</p>
+    </div>
+</body>
+</html>
