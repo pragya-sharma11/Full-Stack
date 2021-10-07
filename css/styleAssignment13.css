@@ -1,0 +1,68 @@
+body{
+    background-color: rgb(230, 230, 230);
+}
+table{
+    
+    padding: 1%;
+    margin: auto;
+    border-radius: 5px;
+    background-color: white;
+}
+th,td{
+    border-radius: 2px;
+}
+.colHead{
+    height: 30px;
+}
+.colHead >th{
+    color: purple;
+    font-size: 30px;
+    padding: 20px;
+    
+}
+th:nth-child(1){
+    background-color: rgb(219, 252, 233);
+}
+th:nth-child(2){
+    background-color: rgb(222, 247, 243);
+}
+th:nth-child(3){
+    background-color: rgb(204, 243, 250);
+}
+th:nth-child(4){
+    background-color: rgb(230, 232, 255);
+}
+.head>th{
+    font-size: 25px;
+    height: 15px;
+    padding: 6px;
+    background-color: white;
+}
+
+td{
+    text-align: center;
+    padding: 10px;
+}
+tr:nth-child(odd){
+    background-color: white;
+}
+.check{
+    color: red;
+    font-size: 20px;
+}
+.cross{
+    color:green;
+    font-size: 20px;
+}
+td> button{
+    border-radius: 5px;
+    background-color: rgb(201, 79, 201);
+    border: none;
+    font-size: 20px;
+    padding: 10px 15px;
+    color: white;
+}
+td>button:hover{
+    background-color: tomato;
+    box-shadow: rgb(92, 77, 75) 0px 0px 10px;
+}
