@@ -9,6 +9,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
+        .wholecontent{
+            display: none;
+        }
+        .loader{
+            margin: auto;
+            height: 100vh;
+            width: 100px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+        .circle{
+            border: solid purple 10px;
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            border-top: plum solid 10px;
+            animation: load 1s linear infinite;
+        }
+        @keyframes load {
+            0%{
+                transform: rotate(0deg);
+            }
+            25%{
+                transform: rotate(120deg);
+            }
+            50%{
+                transform: rotate(240deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
        th, td{
             border-bottom: 2px solid gray;
             border-collapse: collapse;
@@ -70,9 +103,14 @@
         td.nstts{
             color: red;
         }
+
     </style>
 </head>
 <body >
+    <div class="loader" id='loader'>
+        <div class="circle"></div>
+    </div>
+    <div class="wholecontent" id='wholecontent'>
     <header>
         <div style="display: flex;">
             <h1 id="mainHead"><a href="https://github.com/pragya-sharma11/Full-Stack" target="_blank" style="margin-left:0px ;">DreamTech</a></h1>
@@ -109,7 +147,7 @@
         </div>
     </div>
         
-    <table>
+    <table id="assignments">
         <tr><th colspan="5" class="heading"><h3>Table For Practicals</h3></th></tr>
         
         <tr>
@@ -212,7 +250,7 @@
             <td class="tool"><i class="fa fa-pencil"></i><i class="fa fa-trash"></i></td>
         </tr>
         <tr>
-            <td class="sn">13</td>
+            <td class="sn">14</td>
             <td class="name">create a Price table for users</td>
             <td class="link"><a href="./pages/Assignment14.html">Practical-14</a></td>
             <td class="nstts">Unchecked</td>
@@ -232,7 +270,17 @@
             <td class="stts">Checked</td>
             <td class="tool"><i class="fa fa-pencil"></i><i class="fa fa-trash"></i></td>
         </tr>
-        
+        </table>
+    </div>
 
 </body>
+<script>
+    var con = document.getElementById('wholecontent')
+    var load = document.getElementById('loader')
+    setTimeout(() => {
+        load.style.display='none'
+        con.style.display = 'block'
+
+    }, 3000);
+</script>
 </html>
