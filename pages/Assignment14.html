@@ -4,11 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        .container{
+            margin: auto;
+            height: 70vh;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+        }
+        .counter{
+            width: 18%;
+            display: flex;
+            justify-content: space-between;
+        }
+        input{
+            text-align: center;
+            font-size: 25px;
+            width: 65px;
+            height: 35px;
+            background-color: transparent;
+            border: none;
+            color: yellow;
+        }
+        button{
+            padding: 3% 5%;
+            background-color: yellow;
+            border: solid palegoldenrod 3px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        
+        <h1>COUNTER</h1>
+        <div class="counter">
+            <button id="dec" disabled><i class="fa fa-minus"></i></button>
+            <input type="numbers" name="num" id="num" disable min='0' value="0">
+            <button id="inc"><i class="fa fa-plus"></i></button>
+        </div>
     </div>
 </body>
+<script>
+    var dec = document.getElementById('dec');
+    var inc = document.getElementById('inc');
+    var inp = document.getElementById('num');
+    dec.onclick=()=>{
+        let m = parseInt(inp.value)-1;
+        if(m<=0){
+            inp.value = 0;
+            dec.disabled= true;
+
+        }
+        else{
+            dec.disabled = false
+            inp.value = m;
+        }
+    }
+    inc.onclick=()=>{
+        dec.disabled = false
+        let m = parseInt(inp.value)+1;
+        inp.value = m;
+    }
+</script>
 </html>
